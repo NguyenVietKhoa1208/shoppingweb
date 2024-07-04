@@ -1,8 +1,15 @@
 const bar = document.getElementById('bar');
 const nav = document.getElementById('navbar');
+const close = document.getElementById('close');
 
-if (bar && nav) {
+if (bar ) {
     bar.addEventListener('click', () => {
-        nav.classList.toggle('active');
+        nav.classList.add('active');
     });
+}
+
+if (close){
+    close.addEventListener('click', () => {
+        nav.classList.remove('active');
+    })
 }
